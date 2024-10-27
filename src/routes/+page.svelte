@@ -6,6 +6,7 @@
     import sample_mails from "./emails.js";
     import MailMenu from "./MailMenu.svelte";
     import MailContent from "./MailContent.svelte";
+    import {theme} from "$lib/stores";
 
 
     const email_services = [
@@ -22,7 +23,7 @@
 
 </script>
 
-<div class="flex">
+<div class="flex" data-theme={$theme}>
     <div class="h-screen w-72 shrink-0 border-r border-base-content/10">
         <div class="p-2">
             <ComboBox bind:value={selected_email_service_index} items={email_services}>

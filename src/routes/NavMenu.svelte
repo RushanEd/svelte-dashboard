@@ -1,5 +1,11 @@
 <script>
-    import { Archive, ArchiveX, CircleAlert, File, Inbox, MessagesSquare, Send, ShoppingCart, Trash2, Users } from "lucide-svelte";
+    import {theme} from "$lib/stores";
+    import { Archive, Sun, Moon, ArchiveX, CircleAlert, File, Inbox, MessagesSquare, Send, ShoppingCart, Trash2, Users } from "lucide-svelte";
+
+    function switch_theme() {
+        $theme = $theme == "light" ? "dark" : "light";
+    }
+
 </script>
 <div class="p-2 border-t border-t-base-content/5">
     <ul class="menu menu-sm p-0 gap-2">
@@ -18,6 +24,7 @@
         <li><button><MessagesSquare class="w-4"/> <span class="grow">Forums</span> 147</button></li>
         <li><button><ShoppingCart class="w-4"/> <span class="grow">Shopping</span> 12 </button></li>
         <li><button><Archive class="w-4"/> <span class="grow">Promotions</span>  21</button></li>
+        <li><button class="mt-4" onclick={switch_theme}><svelte:component this={$theme=="light"?Sun:Moon} class="w-4"/> <span class="grow">Theme</span></button></li>
     </ul>
 </div>
 

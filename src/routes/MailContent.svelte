@@ -30,7 +30,7 @@
 </div>
 
 <div class="px-6 py-4 border-t border-t-base-content/15">
-    <textarea class="w-full border border-base-content/15 rounded-btn px-6 py-4 text-sm focus:outline-none focus:border-base-content/40" rows="2" placeholder={`Reply ${name}...`}></textarea>
+    <textarea class="w-full border border-base-content/15 bg-transparent rounded-btn px-6 py-4 text-sm focus:outline-none focus:border-base-content/40" rows="2" placeholder={`Reply ${name}...`}></textarea>
     <div class="flex justify-between items-center py-4">
         <label class="flex items-center gap-2 text-xs">
             <input type="checkbox" class="toggle toggle-primary toggle-xs" />

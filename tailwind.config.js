@@ -23,6 +23,19 @@ import typography from '@tailwindcss/typography';
                         "error": "#f00"
                     },
                 },
+                {
+                    dark: {
+                        ...require("daisyui/src/theming/themes")["dark"],
+                        primary: "#fff",
+                        "primary-content": "#000",
+                        "base-100": "#000",
+                        "base-200": "#111",
+                        "base-300": "#222",
+                        "base-content": "#eee",
+                        "--rounded-btn": ".35rem",
+                        "error": "#f33"
+                    },
+                },
             ],
         },
 
