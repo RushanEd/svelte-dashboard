@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.btn {
+    @apply font-normal no-animation;
+}
+
+.tabs.tabs-boxed {
+    @apply p-1;
+}
+.tabs.tabs-boxed .tab.tab-active {
+    @apply bg-base-100 text-base-content hover:text-base-content shadow;
+}
+
+.x-label {
+    padding: .1rem .3rem;
+    @apply rounded-btn text-xs;
+}
+.label-primary {
+    @apply bg-primary text-primary-content;
+}
+.label-outline {
+    @apply border border-base-content/20;
+}
+.label-important {
+    @apply bg-error/5 border-error border text-error;
+}
+.label-default {
+    @apply bg-base-200;
+}
