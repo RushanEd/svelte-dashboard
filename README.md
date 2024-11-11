@@ -1,8 +1,8 @@
-# Svelte Dashboard
+# Svelte Mail
 
-[![Screenshot](static/screenshot.png?raw=true "Screenshot")](https://svelte-dashboard-bice.vercel.app/)
+[![Screenshot](static/screenshot.png?raw=true "Screenshot")](https://svelte-mail-bice.vercel.app/)
 
-[Demo](https://svelte-dashboard-bice.vercel.app/)
+[Demo](https://svelte-mail-bice.vercel.app/)
 
 
 
